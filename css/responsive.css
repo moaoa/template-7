@@ -1,0 +1,56 @@
+body {
+  min-height: 10000px;
+}
+.toggler,
+.close {
+  display: none;
+  background: none;
+  width: 30px;
+  height: 30px;
+  border: none;
+  outline: none;
+  color: white;
+}
+
+/* navBar  */
+@media (max-width: 960px) {
+  .nav {
+    position: absolute;
+    max-width: 300px;
+    height: 100vh;
+    top: 0;
+    left: -100px;
+    background: rgba(0, 0, 0, 0.8) !important;
+    z-index: 100;
+  }
+  .toggler {
+    display: block;
+  }
+
+  nav ul {
+    display: block !important;
+  }
+}
+@media (max-width: 770px) {
+  .will-fade {
+    display: none !important;
+  }
+}
+
+@media (max-width: 990px) {
+  .buttons {
+    display: block;
+    margin-top: 10px;
+  }
+}
+
+#demo {
+  width: 300px;
+  border: blue solid 1px;
+  padding-left: 10px;
+}
+#box {
+  position: absolute;
+  border: red 1px solid;
+  z-index: 100;
+}
